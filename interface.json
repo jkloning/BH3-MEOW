@@ -1,0 +1,365 @@
+{
+    "interface_version": 2,
+    "name": "MAABH3",
+    "description": "崩坏3日常小助手（MaaXYZ/MAABH3 安卓移植版）",
+    "version": "v1.3.3-p1",
+    "github": "https://github.com/jkloning/BH3-MEOW",
+    "icon": "icon.png",
+    "controller": [
+        {
+            "name": "ADB",
+            "label": "ADB",
+            "type": "Adb"
+        }
+    ],
+    "resource": [
+        {
+            "name": "官服",
+            "path": [
+                "./resource"
+            ]
+        }
+    ],
+    "agent": [
+        {
+            "child_exec": "agent/maabh3-agent"
+        }
+    ],
+    "group": [
+        {
+            "name": "daily",
+            "label": "日常",
+            "default_expand": true
+        }
+    ],
+    "task": [
+        {
+            "name": "StartUp",
+            "label": "启动游戏",
+            "entry": "Sub_StartUp",
+            "description": "启动崩坏3并等待进入主界面",
+            "controller": [
+                "ADB"
+            ],
+            "group": [
+                "daily"
+            ],
+            "option": [
+                "Server"
+            ]
+        },
+        {
+            "name": "Dorm",
+            "label": "家园",
+            "entry": "Dorm",
+            "description": "自动收家园金币、体力、打工和远征",
+            "controller": [
+                "ADB"
+            ],
+            "group": [
+                "daily"
+            ],
+            "option": [
+                "Server",
+                "DormFragment"
+            ]
+        },
+        {
+            "name": "MaterialEvent",
+            "label": "材料远征",
+            "entry": "MaterialEvent",
+            "description": "材料远征自动一键减负",
+            "controller": [
+                "ADB"
+            ],
+            "group": [
+                "daily"
+            ],
+            "option": [
+                "Server"
+            ]
+        },
+        {
+            "name": "Armada",
+            "label": "舰团",
+            "entry": "Armada",
+            "description": "自动提交委托回收和领取舰团贡献奖励",
+            "controller": [
+                "ADB"
+            ],
+            "group": [
+                "daily"
+            ],
+            "option": [
+                "Server"
+            ]
+        },
+        {
+            "name": "Shop",
+            "label": "商店",
+            "entry": "Shop",
+            "description": "金币购买后勤终端角色碎片、1星石购买虚境时序通行证",
+            "controller": [
+                "ADB"
+            ],
+            "group": [
+                "daily"
+            ],
+            "option": [
+                "Server"
+            ]
+        },
+        {
+            "name": "Awards",
+            "label": "奖励",
+            "entry": "Awards",
+            "description": "领取每日奖励",
+            "controller": [
+                "ADB"
+            ],
+            "group": [
+                "daily"
+            ],
+            "option": [
+                "Server"
+            ]
+        },
+        {
+            "name": "UniversalMirage",
+            "label": "万象虚境",
+            "entry": "UniversalMirage",
+            "description": "自动打万象虚境（需先选好上场女武神）",
+            "controller": [
+                "ADB"
+            ],
+            "group": [
+                "daily"
+            ],
+            "option": [
+                "Server",
+                "UMCostingTimeSwirlPasses",
+                "UMGlacialFences",
+                "UMIlluminatedLand",
+                "UMRoaringPalace",
+                "UMBladeGrave",
+                "UMStageF2"
+            ]
+        },
+        {
+            "name": "CloseGame",
+            "label": "关闭游戏",
+            "entry": "CloseBH3",
+            "description": "关闭崩坏3",
+            "controller": [
+                "ADB"
+            ],
+            "group": [
+                "daily"
+            ],
+            "option": []
+        }
+    ],
+    "option": {
+        "Server": {
+            "type": "select",
+            "label": "游戏渠道",
+            "description": "官服 / B服 / Vivo服，决定启动游戏时的包名",
+            "default_case": "CN",
+            "cases": [
+                {
+                    "name": "CN",
+                    "pipeline_override": {
+                        "Sub_StartBH3": {
+                            "action": {
+                                "type": "StartApp",
+                                "param": {
+                                    "package": "com.miHoYo.enterprise.NGHSoD/com.miHoYo.overridenativeactivity.OverrideNativeActivity"
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "name": "Bili",
+                    "pipeline_override": {
+                        "Sub_StartBH3": {
+                            "action": {
+                                "type": "StartApp",
+                                "param": {
+                                    "package": "com.miHoYo.bh3.bilibili/com.miHoYo.overridenativeactivity.OverrideNativeActivity"
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "name": "Vivo",
+                    "pipeline_override": {
+                        "Sub_StartBH3": {
+                            "action": {
+                                "type": "StartApp",
+                                "param": {
+                                    "package": "com.miHoYo.bh3.vivo/com.miHoYo.overridenativeactivity.OverrideNativeActivity"
+                                }
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        "DormFragment": {
+            "type": "switch",
+            "label": "刷最近碎片",
+            "description": "开启后家园远征刷最近碎片，关闭则刷最近材料",
+            "default_case": "No",
+            "cases": {
+                "Yes": {
+                    "pipeline_override": {
+                        "Sub_SwitchToFragmentPage": {
+                            "enabled": true
+                        }
+                    }
+                },
+                "No": {
+                    "pipeline_override": {
+                        "Sub_SwitchToFragmentPage": {
+                            "enabled": false
+                        }
+                    }
+                }
+            }
+        },
+        "UMCostingTimeSwirlPasses": {
+            "type": "switch",
+            "label": "花费时序通行证",
+            "description": "万象虚境挑战是否消耗时序通行证",
+            "default_case": "No",
+            "cases": {
+                "Yes": {
+                    "pipeline_override": {
+                        "UniversalMirageCostingTimeSwirlPasses": {
+                            "enabled": true
+                        }
+                    }
+                },
+                "No": {
+                    "pipeline_override": {
+                        "UniversalMirageCostingTimeSwirlPasses": {
+                            "enabled": false
+                        }
+                    }
+                }
+            }
+        },
+        "UMGlacialFences": {
+            "type": "switch",
+            "label": "幽寒之槛",
+            "description": "万象虚境：进入幽寒之槛",
+            "default_case": "Yes",
+            "cases": {
+                "Yes": {
+                    "pipeline_override": {
+                        "Sub_EnterGlacialFencesPage": {
+                            "enabled": true
+                        }
+                    }
+                },
+                "No": {
+                    "pipeline_override": {
+                        "Sub_EnterGlacialFencesPage": {
+                            "enabled": false
+                        }
+                    }
+                }
+            }
+        },
+        "UMIlluminatedLand": {
+            "type": "switch",
+            "label": "煌然之地",
+            "description": "万象虚境：进入煌然之地",
+            "default_case": "No",
+            "cases": {
+                "Yes": {
+                    "pipeline_override": {
+                        "Sub_EnterIlluminatedLandPage": {
+                            "enabled": true
+                        }
+                    }
+                },
+                "No": {
+                    "pipeline_override": {
+                        "Sub_EnterIlluminatedLandPage": {
+                            "enabled": false
+                        }
+                    }
+                }
+            }
+        },
+        "UMRoaringPalace": {
+            "type": "switch",
+            "label": "轰鸣之殿",
+            "description": "万象虚境：进入轰鸣之殿",
+            "default_case": "No",
+            "cases": {
+                "Yes": {
+                    "pipeline_override": {
+                        "Sub_EnterRoaringPalacePage": {
+                            "enabled": true
+                        }
+                    }
+                },
+                "No": {
+                    "pipeline_override": {
+                        "Sub_EnterRoaringPalacePage": {
+                            "enabled": false
+                        }
+                    }
+                }
+            }
+        },
+        "UMBladeGrave": {
+            "type": "switch",
+            "label": "千刃之冢",
+            "description": "万象虚境：进入千刃之冢",
+            "default_case": "No",
+            "cases": {
+                "Yes": {
+                    "pipeline_override": {
+                        "Sub_EnterBladeGravePage": {
+                            "enabled": true
+                        }
+                    }
+                },
+                "No": {
+                    "pipeline_override": {
+                        "Sub_EnterBladeGravePage": {
+                            "enabled": false
+                        }
+                    }
+                }
+            }
+        },
+        "UMStageF2": {
+            "type": "switch",
+            "label": "挑战第二层",
+            "description": "万象虚境：自动打第二层",
+            "default_case": "Yes",
+            "cases": {
+                "Yes": {
+                    "pipeline_override": {
+                        "UniversalMirageStageF2": {
+                            "enabled": true
+                        }
+                    }
+                },
+                "No": {
+                    "pipeline_override": {
+                        "UniversalMirageStageF2": {
+                            "enabled": false
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
