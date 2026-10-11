@@ -2,7 +2,7 @@
     "interface_version": 2,
     "name": "MAABH3",
     "description": "崩坏3日常小助手（MaaXYZ/MAABH3 安卓移植版）",
-    "version": "v1.3.3-p2",
+    "version": "v1.3.3-p3",
     "github": "https://github.com/jkloning/BH3-MEOW",
     "icon": "icon.png",
     "controller": [
@@ -212,154 +212,168 @@
             "label": "刷最近碎片",
             "description": "开启后家园远征刷最近碎片，关闭则刷最近材料",
             "default_case": "No",
-            "cases": {
-                "Yes": {
+            "cases": [
+                {
+                    "name": "Yes",
                     "pipeline_override": {
                         "Sub_SwitchToFragmentPage": {
                             "enabled": true
                         }
                     }
                 },
-                "No": {
+                {
+                    "name": "No",
                     "pipeline_override": {
                         "Sub_SwitchToFragmentPage": {
                             "enabled": false
                         }
                     }
                 }
-            }
+            ]
         },
         "UMCostingTimeSwirlPasses": {
             "type": "switch",
             "label": "花费时序通行证",
             "description": "万象虚境挑战是否消耗时序通行证",
             "default_case": "No",
-            "cases": {
-                "Yes": {
+            "cases": [
+                {
+                    "name": "Yes",
                     "pipeline_override": {
                         "UniversalMirageCostingTimeSwirlPasses": {
                             "enabled": true
                         }
                     }
                 },
-                "No": {
+                {
+                    "name": "No",
                     "pipeline_override": {
                         "UniversalMirageCostingTimeSwirlPasses": {
                             "enabled": false
                         }
                     }
                 }
-            }
+            ]
         },
         "UMGlacialFences": {
             "type": "switch",
             "label": "幽寒之槛",
             "description": "万象虚境：进入幽寒之槛",
             "default_case": "Yes",
-            "cases": {
-                "Yes": {
+            "cases": [
+                {
+                    "name": "Yes",
                     "pipeline_override": {
                         "Sub_EnterGlacialFencesPage": {
                             "enabled": true
                         }
                     }
                 },
-                "No": {
+                {
+                    "name": "No",
                     "pipeline_override": {
                         "Sub_EnterGlacialFencesPage": {
                             "enabled": false
                         }
                     }
                 }
-            }
+            ]
         },
         "UMIlluminatedLand": {
             "type": "switch",
             "label": "煌然之地",
             "description": "万象虚境：进入煌然之地",
             "default_case": "No",
-            "cases": {
-                "Yes": {
+            "cases": [
+                {
+                    "name": "Yes",
                     "pipeline_override": {
                         "Sub_EnterIlluminatedLandPage": {
                             "enabled": true
                         }
                     }
                 },
-                "No": {
+                {
+                    "name": "No",
                     "pipeline_override": {
                         "Sub_EnterIlluminatedLandPage": {
                             "enabled": false
                         }
                     }
                 }
-            }
+            ]
         },
         "UMRoaringPalace": {
             "type": "switch",
             "label": "轰鸣之殿",
             "description": "万象虚境：进入轰鸣之殿",
             "default_case": "No",
-            "cases": {
-                "Yes": {
+            "cases": [
+                {
+                    "name": "Yes",
                     "pipeline_override": {
                         "Sub_EnterRoaringPalacePage": {
                             "enabled": true
                         }
                     }
                 },
-                "No": {
+                {
+                    "name": "No",
                     "pipeline_override": {
                         "Sub_EnterRoaringPalacePage": {
                             "enabled": false
                         }
                     }
                 }
-            }
+            ]
         },
         "UMBladeGrave": {
             "type": "switch",
             "label": "千刃之冢",
             "description": "万象虚境：进入千刃之冢",
             "default_case": "No",
-            "cases": {
-                "Yes": {
+            "cases": [
+                {
+                    "name": "Yes",
                     "pipeline_override": {
                         "Sub_EnterBladeGravePage": {
                             "enabled": true
                         }
                     }
                 },
-                "No": {
+                {
+                    "name": "No",
                     "pipeline_override": {
                         "Sub_EnterBladeGravePage": {
                             "enabled": false
                         }
                     }
                 }
-            }
+            ]
         },
         "UMStageF2": {
             "type": "switch",
             "label": "挑战第二层",
             "description": "万象虚境：自动打第二层",
             "default_case": "Yes",
-            "cases": {
-                "Yes": {
+            "cases": [
+                {
+                    "name": "Yes",
                     "pipeline_override": {
                         "UniversalMirageStageF2": {
                             "enabled": true
                         }
                     }
                 },
-                "No": {
+                {
+                    "name": "No",
                     "pipeline_override": {
                         "UniversalMirageStageF2": {
                             "enabled": false
                         }
                     }
                 }
-            }
+            ]
         }
     },
     "preset": [
