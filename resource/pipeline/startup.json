@@ -1,31 +1,29 @@
 {
     "Sub_StartUp": {
-        "is_sub": true,
         "next": [
-            "Sub_HomeButton",
-            "Sub_BackButton",
-            "Sub_BackText",
-            "Sub_ObtainedAwards",
-            "Sub_CollectDailyLoginReward",
+            "[JumpBack]Sub_HomeButton",
+            "[JumpBack]Sub_BackButton",
+            "[JumpBack]Sub_BackText",
+            "[JumpBack]Sub_ObtainedAwards",
+            "[JumpBack]Sub_CollectDailyLoginReward",
             "Sub_MonthlyCardCumulativeReward",
             "Download",
             "CloseVersionAnnouncement",
             "StartGame",
             "GameIdentifying",
-            "Sub_CloseAnnouncement",
-            "Sub_CloseActivityAnnouncement",
-            "Sub_SuperstringDimensionSettlement",
-            "Sub_AbyssSettlement",
-            "Sub_AiPromptFlag",
-            "Sub_CancelDownload",
+            "[JumpBack]Sub_CloseAnnouncement",
+            "[JumpBack]Sub_CloseActivityAnnouncement",
+            "[JumpBack]Sub_SuperstringDimensionSettlement",
+            "[JumpBack]Sub_AbyssSettlement",
+            "[JumpBack]Sub_AiPromptFlag",
+            "[JumpBack]Sub_CancelDownload",
             "GameLoading",
             "HomeFlag",
             "MiHoYoLogo",
-            "Sub_StartBH3"
+            "[JumpBack]Sub_StartBH3"
         ]
     },
     "Sub_StartBH3": {
-        "is_sub": true,
         "action": {
             "type": "StartApp",
             "param": {
@@ -37,25 +35,25 @@
         "action": "StopApp",
         "package_doc": "set in code.",
         "next": [
-            "Sub_HomeButton",
-            "Sub_BackButton",
-            "Sub_BackText",
-            "Sub_ObtainedAwards",
-            "Sub_CollectDailyLoginReward",
+            "[JumpBack]Sub_HomeButton",
+            "[JumpBack]Sub_BackButton",
+            "[JumpBack]Sub_BackText",
+            "[JumpBack]Sub_ObtainedAwards",
+            "[JumpBack]Sub_CollectDailyLoginReward",
             "Sub_MonthlyCardCumulativeReward",
             "Download",
             "CloseVersionAnnouncement",
             "StartGame",
             "GameIdentifying",
-            "Sub_CloseAnnouncement",
-            "Sub_CloseActivityAnnouncement",
-            "Sub_SuperstringDimensionSettlement",
-            "Sub_AbyssSettlement",
-            "Sub_AiPromptFlag",
+            "[JumpBack]Sub_CloseAnnouncement",
+            "[JumpBack]Sub_CloseActivityAnnouncement",
+            "[JumpBack]Sub_SuperstringDimensionSettlement",
+            "[JumpBack]Sub_AbyssSettlement",
+            "[JumpBack]Sub_AiPromptFlag",
             "GameLoading",
             "HomeFlag",
             "MiHoYoLogo",
-            "Sub_StartBH3"
+            "[JumpBack]Sub_StartBH3"
         ]
     },
     "MiHoYoLogo": {
@@ -67,7 +65,9 @@
             452,
             218
         ],
-        "next": "NoMiHoYoLogo",
+        "next": [
+            "NoMiHoYoLogo"
+        ],
         "timeout": 20000,
         "timeout_next": [
             "RestartBH3"
@@ -84,25 +84,25 @@
             218
         ],
         "next": [
-            "Sub_HomeButton",
-            "Sub_BackButton",
-            "Sub_BackText",
-            "Sub_ObtainedAwards",
-            "Sub_CollectDailyLoginReward",
+            "[JumpBack]Sub_HomeButton",
+            "[JumpBack]Sub_BackButton",
+            "[JumpBack]Sub_BackText",
+            "[JumpBack]Sub_ObtainedAwards",
+            "[JumpBack]Sub_CollectDailyLoginReward",
             "Sub_MonthlyCardCumulativeReward",
             "Download",
             "CloseVersionAnnouncement",
             "StartGame",
             "GameIdentifying",
-            "Sub_CloseAnnouncement",
-            "Sub_CloseActivityAnnouncement",
-            "Sub_SuperstringDimensionSettlement",
-            "Sub_AbyssSettlement",
-            "Sub_AiPromptFlag",
+            "[JumpBack]Sub_CloseAnnouncement",
+            "[JumpBack]Sub_CloseActivityAnnouncement",
+            "[JumpBack]Sub_SuperstringDimensionSettlement",
+            "[JumpBack]Sub_AbyssSettlement",
+            "[JumpBack]Sub_AiPromptFlag",
             "GameLoading",
             "HomeFlag",
             "MiHoYoLogo",
-            "Sub_StartBH3"
+            "[JumpBack]Sub_StartBH3"
         ]
     },
     "GameLoading": {
@@ -119,11 +119,11 @@
             "GameLoading",
             "StartGame",
             "GameIdentifying",
-            "Sub_CloseAnnouncement",
-            "Sub_CloseActivityAnnouncement",
-            "Sub_SuperstringDimensionSettlement",
-            "Sub_AbyssSettlement",
-            "Sub_AiPromptFlag",
+            "[JumpBack]Sub_CloseAnnouncement",
+            "[JumpBack]Sub_CloseActivityAnnouncement",
+            "[JumpBack]Sub_SuperstringDimensionSettlement",
+            "[JumpBack]Sub_AbyssSettlement",
+            "[JumpBack]Sub_AiPromptFlag",
             "HomeFlag"
         ],
         "timeout": 10000,
@@ -144,16 +144,16 @@
             "CloseVersionAnnouncement",
             "StartGame",
             "GameIdentifying",
-            "Sub_BackButton",
-            "Sub_BackText",
-            "Sub_ObtainedAwards",
-            "Sub_CollectDailyLoginReward",
+            "[JumpBack]Sub_BackButton",
+            "[JumpBack]Sub_BackText",
+            "[JumpBack]Sub_ObtainedAwards",
+            "[JumpBack]Sub_CollectDailyLoginReward",
             "Sub_MonthlyCardCumulativeReward",
-            "Sub_CloseAnnouncement",
-            "Sub_CloseActivityAnnouncement",
-            "Sub_SuperstringDimensionSettlement",
-            "Sub_AbyssSettlement",
-            "Sub_AiPromptFlag",
+            "[JumpBack]Sub_CloseAnnouncement",
+            "[JumpBack]Sub_CloseActivityAnnouncement",
+            "[JumpBack]Sub_SuperstringDimensionSettlement",
+            "[JumpBack]Sub_AbyssSettlement",
+            "[JumpBack]Sub_AiPromptFlag",
             "HomeFlag"
         ],
         "timeout": 30000,
@@ -162,7 +162,6 @@
         ]
     },
     "Sub_CloseAnnouncement": {
-        "is_sub": true,
         "recognition": "TemplateMatch",
         "template": "StartUp/CloseAnnouncement.png",
         "roi": [
@@ -177,19 +176,19 @@
         "recognition": "OCR",
         "action": "Click",
         "next": [
-            "Sub_BackButton",
-            "Sub_BackText",
-            "Sub_ObtainedAwards",
-            "Sub_CollectDailyLoginReward",
+            "[JumpBack]Sub_BackButton",
+            "[JumpBack]Sub_BackText",
+            "[JumpBack]Sub_ObtainedAwards",
+            "[JumpBack]Sub_CollectDailyLoginReward",
             "Sub_MonthlyCardCumulativeReward",
             "CloseVersionAnnouncement",
             "StartGame",
             "GameIdentifying",
-            "Sub_CloseAnnouncement",
-            "Sub_CloseActivityAnnouncement",
-            "Sub_SuperstringDimensionSettlement",
-            "Sub_AbyssSettlement",
-            "Sub_AiPromptFlag",
+            "[JumpBack]Sub_CloseAnnouncement",
+            "[JumpBack]Sub_CloseActivityAnnouncement",
+            "[JumpBack]Sub_SuperstringDimensionSettlement",
+            "[JumpBack]Sub_AbyssSettlement",
+            "[JumpBack]Sub_AiPromptFlag",
             "HomeFlag"
         ],
         "timeout": 10000,
@@ -219,7 +218,6 @@
         ]
     },
     "Sub_CollectDailyLoginReward": {
-        "is_sub": true,
         "recognition": "TemplateMatch",
         "template": "StartUp/CollectDailyLoginReward.png",
         "roi": [
@@ -231,7 +229,6 @@
         "action": "Click"
     },
     "Sub_ObtainedAwards": {
-        "is_sub": true,
         "recognition": "TemplateMatch",
         "template": "StartUp/Confirm.png",
         "roi": [
@@ -288,77 +285,132 @@
         ]
     },
     "Downloading": {
-        "recognition": "OCR",
-        "expected": [
-            "下载中"
-        ],
-        "roi": [
-            [
-                1067,
-                593,
-                169,
-                127
-            ],
-            [
-                17,
-                567,
-                175,
-                137
-            ]
-        ],
         "next": [
             "Downloading",
             "Checking",
             "Downloaded",
             "DownloadedConfirm"
+        ],
+        "recognition": "Or",
+        "any_of": [
+            {
+                "recognition": "OCR",
+                "expected": [
+                    "下载中"
+                ],
+                "next": [
+                    "Downloading",
+                    "Checking",
+                    "Downloaded",
+                    "DownloadedConfirm"
+                ],
+                "roi": [
+                    1067,
+                    593,
+                    169,
+                    127
+                ]
+            },
+            {
+                "recognition": "OCR",
+                "expected": [
+                    "下载中"
+                ],
+                "next": [
+                    "Downloading",
+                    "Checking",
+                    "Downloaded",
+                    "DownloadedConfirm"
+                ],
+                "roi": [
+                    17,
+                    567,
+                    175,
+                    137
+                ]
+            }
         ]
     },
     "Checking": {
-        "recognition": "OCR",
-        "expected": [
-            "校验中"
-        ],
-        "roi": [
-            [
-                1067,
-                593,
-                168,
-                127
-            ],
-            [
-                17,
-                567,
-                175,
-                137
-            ]
-        ],
         "next": [
             "Checking",
             "Downloaded",
             "DownloadedConfirm"
+        ],
+        "recognition": "Or",
+        "any_of": [
+            {
+                "recognition": "OCR",
+                "expected": [
+                    "校验中"
+                ],
+                "next": [
+                    "Checking",
+                    "Downloaded",
+                    "DownloadedConfirm"
+                ],
+                "roi": [
+                    1067,
+                    593,
+                    168,
+                    127
+                ]
+            },
+            {
+                "recognition": "OCR",
+                "expected": [
+                    "校验中"
+                ],
+                "next": [
+                    "Checking",
+                    "Downloaded",
+                    "DownloadedConfirm"
+                ],
+                "roi": [
+                    17,
+                    567,
+                    175,
+                    137
+                ]
+            }
         ]
     },
     "Downloaded": {
-        "recognition": "OCR",
-        "expected": [
-            "下载完成"
-        ],
-        "roi": [
-            [
-                1049,
-                594,
-                186,
-                126
-            ],
-            [
-                19,
-                571,
-                197,
-                131
-            ]
-        ],
         "next": [
             "DownloadedConfirm"
+        ],
+        "recognition": "Or",
+        "any_of": [
+            {
+                "recognition": "OCR",
+                "expected": [
+                    "下载完成"
+                ],
+                "next": [
+                    "DownloadedConfirm"
+                ],
+                "roi": [
+                    1049,
+                    594,
+                    186,
+                    126
+                ]
+            },
+            {
+                "recognition": "OCR",
+                "expected": [
+                    "下载完成"
+                ],
+                "next": [
+                    "DownloadedConfirm"
+                ],
+                "roi": [
+                    19,
+                    571,
+                    197,
+                    131
+                ]
+            }
         ]
     },
     "DownloadedConfirm": {
@@ -374,11 +426,11 @@
         "next": [
             "StartGame",
             "GameIdentifying",
-            "Sub_CloseAnnouncement",
-            "Sub_CloseActivityAnnouncement",
-            "Sub_SuperstringDimensionSettlement",
-            "Sub_AbyssSettlement",
-            "Sub_AiPromptFlag",
+            "[JumpBack]Sub_CloseAnnouncement",
+            "[JumpBack]Sub_CloseActivityAnnouncement",
+            "[JumpBack]Sub_SuperstringDimensionSettlement",
+            "[JumpBack]Sub_AbyssSettlement",
+            "[JumpBack]Sub_AiPromptFlag",
             "HomeFlag"
         ]
     },
@@ -396,18 +448,17 @@
             "CloseVersionAnnouncement",
             "StartGame",
             "GameIdentifying",
-            "Sub_BackButton",
-            "Sub_BackText",
-            "Sub_CloseAnnouncement",
-            "Sub_CloseActivityAnnouncement",
-            "Sub_SuperstringDimensionSettlement",
-            "Sub_AbyssSettlement",
-            "Sub_AiPromptFlag",
+            "[JumpBack]Sub_BackButton",
+            "[JumpBack]Sub_BackText",
+            "[JumpBack]Sub_CloseAnnouncement",
+            "[JumpBack]Sub_CloseActivityAnnouncement",
+            "[JumpBack]Sub_SuperstringDimensionSettlement",
+            "[JumpBack]Sub_AbyssSettlement",
+            "[JumpBack]Sub_AiPromptFlag",
             "HomeFlag"
         ]
     },
     "Sub_CloseActivityAnnouncement": {
-        "is_sub": true,
         "recognition": "OCR",
         "expected": "点击空白区域关闭",
         "roi": [
@@ -423,7 +474,6 @@
         "action": "Click"
     },
     "Sub_AiPromptFlag": {
-        "is_sub": true,
         "recognition": "TemplateMatch",
         "template": [
             "StartUp/AiPromptFlag_0.png",
@@ -448,7 +498,6 @@
         ]
     },
     "Sub_SuperstringDimensionSettlement": {
-        "is_sub": true,
         "recognition": "TemplateMatch",
         "template": "StartUp/SuperstringDimensionSettlement.png",
         "roi": [
@@ -470,7 +519,6 @@
         ]
     },
     "Sub_AbyssSettlement": {
-        "is_sub": true,
         "recognition": "TemplateMatch",
         "template": "StartUp/AbyssSettlement.png",
         "roi": [

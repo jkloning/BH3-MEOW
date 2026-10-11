@@ -2,9 +2,9 @@
     "Commissions": {
         "next": [
             "CommissionsPageFlag",
-            "Sub_EnterCommissionsPage",
-            "Sub_EnterArmadaPage",
-            "Sub_BackButton"
+            "[JumpBack]Sub_EnterCommissionsPage",
+            "[JumpBack]Sub_EnterArmadaPage",
+            "[JumpBack]Sub_BackButton"
         ]
     },
     "CommissionsPageFlag": {
@@ -126,7 +126,7 @@
         ],
         "next": [
             "CommissionsRewardsPageFlag",
-            "Sub_EnterCommissionsRewardsPage"
+            "[JumpBack]Sub_EnterCommissionsRewardsPage"
         ]
     },
     "CommossionLimit": {
@@ -144,7 +144,7 @@
         "post_wait_freezes": 200,
         "next": [
             "CommissionsRewardsPageFlag",
-            "Sub_EnterCommissionsRewardsPage"
+            "[JumpBack]Sub_EnterCommissionsRewardsPage"
         ]
     },
     "SubmitCommission": {
@@ -160,7 +160,7 @@
         "next": [
             "CommossionLimit",
             "SubmitCommission",
-            "Sub_CloseDialogBox",
+            "[JumpBack]Sub_CloseDialogBox",
             "CommissionItem",
             "CommissionItemBuy",
             "CommissionSubmitButton",
@@ -178,7 +178,7 @@
         ],
         "next": [
             "CommissionsRewardsClaim",
-            "Sub_CloseDialogBox",
+            "[JumpBack]Sub_CloseDialogBox",
             "CommissionsRewardsLastDistribution"
         ]
     },
@@ -194,7 +194,7 @@
         "action": "Click",
         "post_wait_freezes": 200,
         "next": [
-            "Sub_CloseDialogBox",
+            "[JumpBack]Sub_CloseDialogBox",
             "CommissionsRewardsLastDistribution"
         ]
     },

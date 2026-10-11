@@ -2,10 +2,10 @@
     "Armada": {
         "next": [
             "ArmadaPageFlag",
-            "Sub_AiPromptFlag",
-            "Sub_CancelDownload",
-            "Sub_EnterArmadaPage",
-            "Sub_StartUp"
+            "[JumpBack]Sub_AiPromptFlag",
+            "[JumpBack]Sub_CancelDownload",
+            "[JumpBack]Sub_EnterArmadaPage",
+            "[JumpBack]Sub_StartUp"
         ]
     },
     "ArmadaPageFlag": {

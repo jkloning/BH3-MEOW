@@ -2,12 +2,12 @@
     "UniversalMirage": {
         "next": [
             "UniversalMiragePageFlag",
-            "Sub_AiPromptFlag",
-            "Sub_CancelDownload",
-            "Sub_EnterUniversalMiragePage",
-            "Sub_EnterChallengeEventPage",
-            "Sub_EnterAttackPage",
-            "Sub_StartUp"
+            "[JumpBack]Sub_AiPromptFlag",
+            "[JumpBack]Sub_CancelDownload",
+            "[JumpBack]Sub_EnterUniversalMiragePage",
+            "[JumpBack]Sub_EnterChallengeEventPage",
+            "[JumpBack]Sub_EnterAttackPage",
+            "[JumpBack]Sub_StartUp"
         ]
     },
     "UniversalMiragePageFlag": {
@@ -20,12 +20,12 @@
             140
         ],
         "next": [
-            "Sub_CloseDialogBox",
+            "[JumpBack]Sub_CloseDialogBox",
             "UniversalMirageStageFlag",
-            "Sub_EnterGlacialFencesPage",
-            "Sub_EnterIlluminatedLandPage",
-            "Sub_EnterRoaringPalacePage",
-            "Sub_EnterBladeGravePage",
+            "[JumpBack]Sub_EnterGlacialFencesPage",
+            "[JumpBack]Sub_EnterIlluminatedLandPage",
+            "[JumpBack]Sub_EnterRoaringPalacePage",
+            "[JumpBack]Sub_EnterBladeGravePage",
             "Stop"
         ]
     },
@@ -43,7 +43,7 @@
             "target": "UniversalMirageStageFlag"
         },
         "next": [
-            "Sub_CloseDialogBox",
+            "[JumpBack]Sub_CloseDialogBox",
             "UniversalMirageStageF2",
             "UniversalMirageStageF5",
             "Stop"
@@ -54,7 +54,7 @@
         "next": [
             "UniversalMirageStageF2Flag",
             "SelectUniversalMirageStageF2",
-            "Sub_UniversalMirageStageSwipeTop"
+            "[JumpBack]Sub_UniversalMirageStageSwipeTop"
         ]
     },
     "UniversalMirageStageF5": {
@@ -64,11 +64,10 @@
             "Stop",
             "UniversalMirageStageF5Flag",
             "SelectUniversalMirageStageF5",
-            "Sub_UniversalMirageStageSwipeBottom"
+            "[JumpBack]Sub_UniversalMirageStageSwipeBottom"
         ]
     },
     "Sub_UniversalMirageStageSwipeTop": {
-        "is_sub": true,
         "action": "Swipe",
         "begin": [
             400,
@@ -85,7 +84,6 @@
         "duration": 500
     },
     "Sub_UniversalMirageStageSwipeBottom": {
-        "is_sub": true,
         "action": "Swipe",
         "begin": [
             400,
@@ -144,8 +142,8 @@
             "UniversalMirageNoneInviteOfMirage",
             "UniversalMirageStageNoneValkyrja",
             "UniversalMirageStageF2Start",
-            "Sub_UniversalMirageStagePrepare",
-            "Sub_UniversalMirageStageFightAlone"
+            "[JumpBack]Sub_UniversalMirageStagePrepare",
+            "[JumpBack]Sub_UniversalMirageStageFightAlone"
         ]
     },
     "UniversalMirageStageF5Flag": {
@@ -161,12 +159,11 @@
             "UniversalMirageNoneInviteOfMirage",
             "UniversalMirageStageNoneValkyrja",
             "UniversalMirageStageF5Start",
-            "Sub_UniversalMirageStagePrepare",
-            "Sub_UniversalMirageStageFightAlone"
+            "[JumpBack]Sub_UniversalMirageStagePrepare",
+            "[JumpBack]Sub_UniversalMirageStageFightAlone"
         ]
     },
     "Sub_UniversalMirageStageFightAlone": {
-        "is_sub": true,
         "recognition": "TemplateMatch",
         "template": "Combat/UniversalMirage/UniversalMirageStageFightAlone.png",
         "roi": [
@@ -178,7 +175,6 @@
         "action": "Click"
     },
     "Sub_UniversalMirageStagePrepare": {
-        "is_sub": true,
         "recognition": "TemplateMatch",
         "template": "Combat/UniversalMirage/UniversalMirageStagePrepare.png",
         "roi": [
@@ -224,7 +220,7 @@
             557,
             140
         ],
-        "next": "Stop"
+        "next": ["Stop"]
     },
     "UniversalMirageStageNoneValkyrja": {
         "recognition": "TemplateMatch",
@@ -235,7 +231,7 @@
             192,
             132
         ],
-        "next": "Stop"
+        "next": ["Stop"]
     },
     "UniversalMirageCombatFinish": {
         "recognition": "OCR",
@@ -268,7 +264,7 @@
         "next": [
             "UniversalMirageNoneTimeSwirlPasses",
             "UniversalMirageCostingTimeSwirlPasses",
-            "Sub_CloseDialogBox",
+            "[JumpBack]Sub_CloseDialogBox",
             "Stop"
         ]
     },
@@ -297,7 +293,7 @@
         "action": "Click",
         "next": [
             "UniversalMirageQuit",
-            "Sub_CloseDialogBox",
+            "[JumpBack]Sub_CloseDialogBox",
             "Stop"
         ]
     }

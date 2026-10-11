@@ -1,6 +1,5 @@
 {
     "Sub_EnterCommissionsRewardsPage": {
-        "is_sub": true,
         "recognition": "TemplateMatch",
         "template": "Navigation/Commissions/EnterCommissionsRewardsPage.png",
         "roi": [

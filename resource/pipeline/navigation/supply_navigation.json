@@ -1,6 +1,5 @@
 {
     "Sub_EnterShopPage": {
-        "is_sub": true,
         "recognition": "TemplateMatch",
         "template": "Navigation/Supply/EnterShopPage.png",
         "roi": [

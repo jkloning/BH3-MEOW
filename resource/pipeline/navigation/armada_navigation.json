@@ -1,6 +1,5 @@
 {
     "Sub_EnterCommissionsPage": {
-        "is_sub": true,
         "recognition": "TemplateMatch",
         "template": "Navigation/Armada/EnterCommissionsPage.png",
         "roi": [
@@ -12,7 +11,6 @@
         "action": "Click"
     },
     "Sub_EnterContributionsPage": {
-        "is_sub": true,
         "recognition": "TemplateMatch",
         "template": "Navigation/Armada/EnterArmadaContribution.png",
         "roi": [

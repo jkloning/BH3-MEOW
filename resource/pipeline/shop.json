@@ -2,11 +2,11 @@
     "Shop": {
         "next": [
             "DailyShopPageFlag",
-            "Sub_AiPromptFlag",
-            "Sub_CancelDownload",
-            "Sub_EnterShopPage",
-            "Sub_EnterSupplyPage",
-            "Sub_StartUp"
+            "[JumpBack]Sub_AiPromptFlag",
+            "[JumpBack]Sub_CancelDownload",
+            "[JumpBack]Sub_EnterShopPage",
+            "[JumpBack]Sub_EnterSupplyPage",
+            "[JumpBack]Sub_StartUp"
         ]
     },
     "DailyShopPageFlag": {
@@ -21,7 +21,7 @@
         "next": [
             "LogisticsTerminalBuyCharacterFragmentByGold",
             "MirageStoreBuyTimeSwirlPassesBy1Asterite",
-            "Sub_CloseDialogBox"
+            "[JumpBack]Sub_CloseDialogBox"
         ]
     },
     "LogisticsTerminalBuyCharacterFragmentByGold": {
@@ -148,8 +148,8 @@
         "template": "Shop/LogisticsTerminalPage.png",
         "next": [
             "MirageStore1AsteriteFlag",
-            "Sub_EnterMirageStorePage",
-            "Sub_EnterActivityShopPage",
+            "[JumpBack]Sub_EnterMirageStorePage",
+            "[JumpBack]Sub_EnterActivityShopPage",
             "Stop"
         ]
     },

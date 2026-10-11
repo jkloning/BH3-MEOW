@@ -1,29 +1,39 @@
 {
     "Sub_BackButton": {
-        "is_sub": true,
-        "recognition": "TemplateMatch",
-        "template": [
-            "Utils/BackButton.png",
-            "Utils/BackButton_1.png"
-        ],
-        "roi": [
-            [
-                0,
-                0,
-                180,
-                133
-            ],
-            [
-                60,
-                0,
-                124,
-                132
-            ]
-        ],
-        "action": "Click"
+        "action": "Click",
+        "recognition": "Or",
+        "any_of": [
+            {
+                "recognition": "TemplateMatch",
+                "template": [
+                    "Utils/BackButton.png",
+                    "Utils/BackButton_1.png"
+                ],
+                "action": "Click",
+                "roi": [
+                    0,
+                    0,
+                    180,
+                    133
+                ]
+            },
+            {
+                "recognition": "TemplateMatch",
+                "template": [
+                    "Utils/BackButton.png",
+                    "Utils/BackButton_1.png"
+                ],
+                "action": "Click",
+                "roi": [
+                    60,
+                    0,
+                    124,
+                    132
+                ]
+            }
+        ]
     },
     "Sub_BackText": {
-        "is_sub": true,
         "recognition": "OCR",
         "expected": [
             "返回"
@@ -37,30 +47,40 @@
         "action": "Click"
     },
     "Sub_HomeButton": {
-        "is_sub": true,
-        "recognition": "TemplateMatch",
-        "template": [
-            "Utils/HomeButton.png",
-            "Utils/HomeButton_1.png"
-        ],
-        "roi": [
-            [
-                126,
-                0,
-                212,
-                134
-            ],
-            [
-                136,
-                0,
-                133,
-                132
-            ]
-        ],
-        "action": "Click"
+        "action": "Click",
+        "recognition": "Or",
+        "any_of": [
+            {
+                "recognition": "TemplateMatch",
+                "template": [
+                    "Utils/HomeButton.png",
+                    "Utils/HomeButton_1.png"
+                ],
+                "action": "Click",
+                "roi": [
+                    126,
+                    0,
+                    212,
+                    134
+                ]
+            },
+            {
+                "recognition": "TemplateMatch",
+                "template": [
+                    "Utils/HomeButton.png",
+                    "Utils/HomeButton_1.png"
+                ],
+                "action": "Click",
+                "roi": [
+                    136,
+                    0,
+                    133,
+                    132
+                ]
+            }
+        ]
     },
     "Sub_CancelButton": {
-        "is_sub": true,
         "recognition": "TemplateMatch",
         "template": "Utils/CancelButton.png",
         "roi": [
@@ -72,7 +92,6 @@
         "action": "Click"
     },
     "Sub_CloseDialogBox": {
-        "is_sub": true,
         "recognition": "TemplateMatch",
         "template": "Utils/CloseDialogBox.png",
         "roi": [
@@ -84,7 +103,6 @@
         "action": "Click"
     },
     "Sub_CancelDownload": {
-        "is_sub": true,
         "recognition": "OCR",
         "expected": [
             "即将下载"
@@ -96,7 +114,7 @@
             143
         ],
         "next": [
-            "Sub_CancelButton",
+            "[JumpBack]Sub_CancelButton",
             "Stop"
         ]
     },

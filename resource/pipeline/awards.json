@@ -2,10 +2,10 @@
     "Awards": {
         "next": [
             "MissionsPageFlag",
-            "Sub_AiPromptFlag",
-            "Sub_CancelDownload",
-            "Sub_EnterMissionsPage",
-            "Sub_StartUp"
+            "[JumpBack]Sub_AiPromptFlag",
+            "[JumpBack]Sub_CancelDownload",
+            "[JumpBack]Sub_EnterMissionsPage",
+            "[JumpBack]Sub_StartUp"
         ]
     },
     "MissionsPageFlag": {
@@ -19,7 +19,7 @@
         ],
         "post_wait_freezes": 200,
         "next": [
-            "Sub_EnterBPMissionsPage",
+            "[JumpBack]Sub_EnterBPMissionsPage",
             "BPMissionsQuickClaim",
             "NoneDailyBPRewards",
             "DailyBPRewards_100",
@@ -41,7 +41,7 @@
         ],
         "action": "Click",
         "next": [
-            "Sub_CloseDialogBox",
+            "[JumpBack]Sub_CloseDialogBox",
             "BPMissionsQuickClaim",
             "NoneDailyBPRewards",
             "DailyBPRewards_100",
@@ -71,8 +71,8 @@
         "next": [
             "DailyBPRewardsClaim_100",
             "DailyBPRewardsPreview",
-            "Sub_CloseDialogBox",
-            "Sub_BackButton",
+            "[JumpBack]Sub_CloseDialogBox",
+            "[JumpBack]Sub_BackButton",
             "HomeFlag"
         ]
     },
@@ -88,8 +88,8 @@
         "next": [
             "DailyBPRewardsPreview",
             "DailyBPRewards_100",
-            "Sub_CloseDialogBox",
-            "Sub_BackButton",
+            "[JumpBack]Sub_CloseDialogBox",
+            "[JumpBack]Sub_BackButton",
             "HomeFlag"
         ]
     },
@@ -113,8 +113,8 @@
         "next": [
             "DailyBPRewardsClaim_200",
             "DailyBPRewardsPreview",
-            "Sub_CloseDialogBox",
-            "Sub_BackButton",
+            "[JumpBack]Sub_CloseDialogBox",
+            "[JumpBack]Sub_BackButton",
             "HomeFlag"
         ]
     },
@@ -130,8 +130,8 @@
         "next": [
             "DailyBPRewardsPreview",
             "DailyBPRewards_200",
-            "Sub_CloseDialogBox",
-            "Sub_BackButton",
+            "[JumpBack]Sub_CloseDialogBox",
+            "[JumpBack]Sub_BackButton",
             "HomeFlag"
         ]
     },
@@ -155,8 +155,8 @@
         "next": [
             "DailyBPRewardsClaim_300",
             "DailyBPRewardsPreview",
-            "Sub_CloseDialogBox",
-            "Sub_BackButton",
+            "[JumpBack]Sub_CloseDialogBox",
+            "[JumpBack]Sub_BackButton",
             "HomeFlag"
         ]
     },
@@ -172,8 +172,8 @@
         "next": [
             "DailyBPRewardsPreview",
             "DailyBPRewards_300",
-            "Sub_CloseDialogBox",
-            "Sub_BackButton",
+            "[JumpBack]Sub_CloseDialogBox",
+            "[JumpBack]Sub_BackButton",
             "HomeFlag"
         ]
     },
@@ -197,8 +197,8 @@
         "next": [
             "DailyBPRewardsClaim_450",
             "DailyBPRewardsPreview",
-            "Sub_CloseDialogBox",
-            "Sub_BackButton",
+            "[JumpBack]Sub_CloseDialogBox",
+            "[JumpBack]Sub_BackButton",
             "HomeFlag"
         ]
     },
@@ -214,8 +214,8 @@
         "next": [
             "DailyBPRewardsPreview",
             "DailyBPRewards_450",
-            "Sub_CloseDialogBox",
-            "Sub_BackButton",
+            "[JumpBack]Sub_CloseDialogBox",
+            "[JumpBack]Sub_BackButton",
             "HomeFlag"
         ]
     },
@@ -239,8 +239,8 @@
         "next": [
             "DailyBPRewardsClaim_600",
             "DailyBPRewardsPreview",
-            "Sub_CloseDialogBox",
-            "Sub_BackButton",
+            "[JumpBack]Sub_CloseDialogBox",
+            "[JumpBack]Sub_BackButton",
             "HomeFlag"
         ]
     },
@@ -256,8 +256,8 @@
         "next": [
             "DailyBPRewardsPreview",
             "DailyBPRewards_600",
-            "Sub_CloseDialogBox",
-            "Sub_BackButton",
+            "[JumpBack]Sub_CloseDialogBox",
+            "[JumpBack]Sub_BackButton",
             "HomeFlag"
         ]
     },
@@ -271,8 +271,8 @@
             143
         ],
         "next": [
-            "Sub_CloseDialogBox",
-            "Sub_BackButton",
+            "[JumpBack]Sub_CloseDialogBox",
+            "[JumpBack]Sub_BackButton",
             "HomeFlag"
         ]
     },
@@ -286,7 +286,7 @@
             123
         ],
         "next": [
-            "Sub_BackButton",
+            "[JumpBack]Sub_BackButton",
             "HomeFlag"
         ]
     }

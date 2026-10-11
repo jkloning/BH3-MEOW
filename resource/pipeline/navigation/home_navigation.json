@@ -1,6 +1,5 @@
 {
     "Sub_EnterAttackPage": {
-        "is_sub": true,
         "recognition": "OCR",
         "expected": "出击",
         "roi": [
@@ -13,7 +12,6 @@
         "post_delay": 1500
     },
     "Sub_EnterSupplyPage": {
-        "is_sub": true,
         "recognition": "OCR",
         "expected": "补给",
         "roi": [
@@ -26,7 +24,6 @@
         "post_delay": 1500
     },
     "Sub_EnterArmadaPage": {
-        "is_sub": true,
         "recognition": "OCR",
         "expected": [
             "舰团"
@@ -41,7 +38,6 @@
         "post_delay": 1500
     },
     "Sub_EnterDormPage": {
-        "is_sub": true,
         "recognition": "OCR",
         "expected": [
             "家园"
@@ -56,7 +52,6 @@
         "post_delay": 1500
     },
     "Sub_EnterMissionsPage": {
-        "is_sub": true,
         "recognition": "OCR",
         "expected": [
             "任务"

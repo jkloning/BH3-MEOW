@@ -2,9 +2,9 @@
     "Expeditions": {
         "next": [
             "ExpeditionsPageFlag",
-            "Sub_EnterExpeditionsPage",
-            "Sub_EnterDormPage",
-            "Sub_BackButton"
+            "[JumpBack]Sub_EnterExpeditionsPage",
+            "[JumpBack]Sub_EnterDormPage",
+            "[JumpBack]Sub_BackButton"
         ]
     },
     "ExpeditionsPageFlag": {
@@ -23,7 +23,6 @@
         ]
     },
     "Sub_SwitchToFragmentPage": {
-        "is_sub": true,
         "enabled": false,
         "recognition": "TemplateMatch",
         "template": "Dorm/SwitchToFragmentPage.png",
@@ -36,7 +35,6 @@
         "action": "Click"
     },
     "Sub_SwitchToMaterialPage": {
-        "is_sub": true,
         "enabled": false,
         "recognition": "TemplateMatch",
         "template": "Dorm/SwitchToMaterialPage.png",
@@ -131,7 +129,7 @@
         ],
         "inverse": true,
         "next": [
-            "Sub_SwitchToFragmentPage",
+            "[JumpBack]Sub_SwitchToFragmentPage",
             "SelectFirstExpeditions",
             "NoIdleExpeditions"
         ]

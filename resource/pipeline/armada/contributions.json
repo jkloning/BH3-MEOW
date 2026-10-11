@@ -2,9 +2,9 @@
     "Contributions": {
         "next": [
             "ContributionsPageFlag",
-            "Sub_EnterContributionsPage",
-            "Sub_EnterArmadaPage",
-            "Sub_BackButton"
+            "[JumpBack]Sub_EnterContributionsPage",
+            "[JumpBack]Sub_EnterArmadaPage",
+            "[JumpBack]Sub_BackButton"
         ]
     },
     "ContributionsPageFlag": {
@@ -85,7 +85,7 @@
         ],
         "action": "Click",
         "next": [
-            "Sub_CloseDialogBox",
+            "[JumpBack]Sub_CloseDialogBox",
             "Stop"
         ]
     },
@@ -145,7 +145,7 @@
         ],
         "action": "Click",
         "next": [
-            "Sub_CloseDialogBox",
+            "[JumpBack]Sub_CloseDialogBox",
             "Stop"
         ]
     },
@@ -205,7 +205,7 @@
         ],
         "action": "Click",
         "next": [
-            "Sub_CloseDialogBox",
+            "[JumpBack]Sub_CloseDialogBox",
             "Stop"
         ]
     },
@@ -265,7 +265,7 @@
         ],
         "action": "Click",
         "next": [
-            "Sub_CloseDialogBox",
+            "[JumpBack]Sub_CloseDialogBox",
             "Stop"
         ]
     },
@@ -324,7 +324,7 @@
         ],
         "action": "Click",
         "next": [
-            "Sub_CloseDialogBox",
+            "[JumpBack]Sub_CloseDialogBox",
             "Stop"
         ]
     }

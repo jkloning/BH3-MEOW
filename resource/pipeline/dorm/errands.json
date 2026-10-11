@@ -2,9 +2,9 @@
     "Errands": {
         "next": [
             "ErrandsPageFlag",
-            "Sub_EnterErrandsPage",
-            "Sub_EnterDormPage",
-            "Sub_BackButton"
+            "[JumpBack]Sub_EnterErrandsPage",
+            "[JumpBack]Sub_EnterDormPage",
+            "[JumpBack]Sub_BackButton"
         ]
     },
     "ErrandsPageFlag": {
@@ -50,7 +50,6 @@
         ],
         "action": "Click",
         "next": [
-            "Rewards_claim",
             "One_click2",
             "One_click1"
         ]

@@ -1,7 +1,6 @@
 {
     "Sub_EnterGlacialFencesPage": {
         "enabled": false,
-        "is_sub": true,
         "recognition": "TemplateMatch",
         "template": "Navigation/UniversalMirage/EnterGlacialFencesPage.png",
         "roi": [
@@ -14,7 +13,6 @@
     },
     "Sub_EnterIlluminatedLandPage": {
         "enabled": false,
-        "is_sub": true,
         "recognition": "TemplateMatch",
         "template": "Navigation/UniversalMirage/EnterIlluminatedLandPage.png",
         "roi": [
@@ -27,7 +25,6 @@
     },
     "Sub_EnterRoaringPalacePage": {
         "enabled": false,
-        "is_sub": true,
         "recognition": "TemplateMatch",
         "template": "Navigation/UniversalMirage/EnterRoaringPalacePage.png",
         "roi": [
@@ -40,7 +37,6 @@
     },
     "Sub_EnterBladeGravePage": {
         "enabled": false,
-        "is_sub": true,
         "recognition": "TemplateMatch",
         "template": "Navigation/UniversalMirage/EnterBladeGravePage.png",
         "roi": [

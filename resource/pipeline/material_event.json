@@ -2,13 +2,13 @@
     "MaterialEvent": {
         "next": [
             "MaterialEventFlag",
-            "Sub_AiPromptFlag",
-            "Sub_CancelDownload",
-            "Sub_EnterMaterialExpeditionPage",
-            "Sub_EnterAttackEventPage",
-            "Sub_EnterAttackPage",
-            "Sub_BackButton",
-            "Sub_StartUp"
+            "[JumpBack]Sub_AiPromptFlag",
+            "[JumpBack]Sub_CancelDownload",
+            "[JumpBack]Sub_EnterMaterialExpeditionPage",
+            "[JumpBack]Sub_EnterAttackEventPage",
+            "[JumpBack]Sub_EnterAttackPage",
+            "[JumpBack]Sub_BackButton",
+            "[JumpBack]Sub_StartUp"
         ]
     },
     "MaterialEventFlag": {
@@ -22,7 +22,7 @@
         ],
         "next": [
             "QuickLITE",
-            "Sub_EnterMaterialEventPage",
+            "[JumpBack]Sub_EnterMaterialEventPage",
             "NoneQuickLITE"
         ]
     },
@@ -54,7 +54,7 @@
         ],
         "inverse": true,
         "next": [
-            "Sub_HomeButton",
+            "[JumpBack]Sub_HomeButton",
             "HomeFlag"
         ]
     },
@@ -71,8 +71,8 @@
         "next": [
             "LITE",
             "MaterialEventNotEnoughAP",
-            "Sub_CloseDialogBox",
-            "Sub_HomeButton",
+            "[JumpBack]Sub_CloseDialogBox",
+            "[JumpBack]Sub_HomeButton",
             "HomeFlag"
         ]
     },
@@ -91,8 +91,8 @@
         "post_wait_freezes": 200,
         "next": [
             "MaterialEventNotEnoughAPToGetStoredAP",
-            "Sub_CloseDialogBox",
-            "Sub_HomeButton",
+            "[JumpBack]Sub_CloseDialogBox",
+            "[JumpBack]Sub_HomeButton",
             "HomeFlag"
         ]
     },
@@ -108,8 +108,8 @@
         "action": "Click",
         "next": [
             "QuickLITE",
-            "Sub_CloseDialogBox",
-            "Sub_HomeButton",
+            "[JumpBack]Sub_CloseDialogBox",
+            "[JumpBack]Sub_HomeButton",
             "HomeFlag"
         ]
     },
@@ -124,7 +124,7 @@
         ],
         "action": "Click",
         "next": [
-            "Sub_HomeButton",
+            "[JumpBack]Sub_HomeButton",
             "HomeFlag"
         ]
     }

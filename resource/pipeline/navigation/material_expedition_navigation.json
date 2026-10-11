@@ -1,6 +1,5 @@
 {
     "Sub_EnterMaterialEventPage": {
-        "is_sub": true,
         "recognition": "TemplateMatch",
         "template": "Navigation/MaterialExpedition/EnterMaterialEventPage.png",
         "roi": [

@@ -1,6 +1,5 @@
 {
     "Sub_EnterUniversalMiragePage": {
-        "is_sub": true,
         "recognition": "TemplateMatch",
         "template": "Navigation/ChallengeEvent/EnterUniversalMiragePage.png",
         "roi": [
