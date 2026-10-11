@@ -2,7 +2,7 @@
     "interface_version": 2,
     "name": "MAABH3",
     "description": "崩坏3日常小助手（MaaXYZ/MAABH3 安卓移植版）",
-    "version": "v1.3.3-p1",
+    "version": "v1.3.3-p2",
     "github": "https://github.com/jkloning/BH3-MEOW",
     "icon": "icon.png",
     "controller": [
@@ -361,5 +361,53 @@
                 }
             }
         }
-    }
+    },
+    "preset": [
+        {
+            "name": "preset_daily_full",
+            "label": "日常全套",
+            "description": "启动游戏 + 家园 + 材料远征 + 舰团 + 商店 + 奖励（万象虚境需先手动选好女武神，请按需单独添加）",
+            "task": [
+                {
+                    "name": "StartUp",
+                    "enabled": true
+                },
+                {
+                    "name": "Dorm",
+                    "enabled": true
+                },
+                {
+                    "name": "MaterialEvent",
+                    "enabled": true
+                },
+                {
+                    "name": "Armada",
+                    "enabled": true
+                },
+                {
+                    "name": "Shop",
+                    "enabled": true
+                },
+                {
+                    "name": "Awards",
+                    "enabled": true
+                }
+            ]
+        },
+        {
+            "name": "preset_quick_daily",
+            "label": "快速日常",
+            "description": "启动游戏 + 领每日奖励，最快签到流",
+            "task": [
+                {
+                    "name": "StartUp",
+                    "enabled": true
+                },
+                {
+                    "name": "Awards",
+                    "enabled": true
+                }
+            ]
+        }
+    ]
 }
