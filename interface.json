@@ -2,7 +2,7 @@
     "interface_version": 2,
     "name": "MAABH3",
     "description": "崩坏3日常小助手（MaaXYZ/MAABH3 安卓移植版）",
-    "version": "v1.3.5",
+    "version": "v1.3.6",
     "github": "https://github.com/jkloning/BH3-MEOW",
     "icon": "icon.png",
     "controller": [
